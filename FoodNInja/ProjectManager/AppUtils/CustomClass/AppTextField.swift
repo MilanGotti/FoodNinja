@@ -9,18 +9,20 @@ import UIKit
 
 class AppTextField: UITextField {
 
+    var placeholderTitle: String = "" {
+        didSet{
+            self.placeholder = self.placeholderTitle
+        }
+    }
+    
     override init(frame: CGRect) {
             super.init(frame: frame)
-            
-            // Setup view from .xib file
-            
+        self.setupInit()
         }
         
         required init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
-            
-            // Setup view from .xib file
-            
+            self.setupInit()
         }
     
     /*func setupXIB() {
@@ -32,6 +34,14 @@ class AppTextField: UITextField {
     }*/
     
     func setupInit() {
+        
+        self.font = AppFont.size16.regular
+        self.textColor = .appBlack
+        self.addLeftPadding(size: 15)
+        self.borderStyle = .none
+        self.backgroundColor = UIColor.defaultWhite.withAlphaComponent(0.25)
+        self.layer.cornerRadius = 10
+        self.addShadow(color: .defaultBlack, offSet: CGSize(width: 2, height: 2))
         
     }
     

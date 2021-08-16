@@ -116,8 +116,8 @@
                                             <constraint firstAttribute="width" secondItem="I0L-hg-oLn" secondAttribute="height" multiplier="1:1" id="yr3-wj-O8n"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdW-E6-o0x">
-                                        <rect key="frame" x="20" y="245" width="374" height="481"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdW-E6-o0x">
+                                        <rect key="frame" x="20" y="278" width="374" height="342"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login To Your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifn-FX-Yj6">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="25.5"/>
@@ -125,12 +125,67 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP6-N7-hxF" customClass="AppTextField" customModule="FoodNInja" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60.5" width="374" height="48.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-zz-OIo" customClass="AppTextField" customModule="FoodNInja" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="124" width="374" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Continue With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQ7-By-0yn">
+                                                <rect key="frame" x="121.5" y="203" width="131.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A36-Jr-Vfz">
+                                                <rect key="frame" x="0.0" y="253.5" width="374" height="48.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-4p-A3M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="48.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLq-yn-dkg">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="48.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poq-zb-idN">
+                                                <rect key="frame" x="216" y="312" width="158" height="30"/>
+                                                <state key="normal" title="Forgot Your Password?"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVZ-yc-Yya">
+                                                <rect key="frame" x="0.0" y="312" width="107" height="30"/>
+                                                <state key="normal" title="Create Account"/>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="ifn-FX-Yj6" firstAttribute="leading" secondItem="vdW-E6-o0x" secondAttribute="leading" id="5qi-o3-GQm"/>
+                                            <constraint firstAttribute="bottom" secondItem="poq-zb-idN" secondAttribute="bottom" id="66I-47-HRS"/>
+                                            <constraint firstAttribute="trailing" secondItem="HP6-N7-hxF" secondAttribute="trailing" id="69l-fv-bae"/>
+                                            <constraint firstItem="JQ7-By-0yn" firstAttribute="top" secondItem="rbf-zz-OIo" secondAttribute="bottom" constant="30" id="AvX-lV-hhU"/>
+                                            <constraint firstItem="rbf-zz-OIo" firstAttribute="top" secondItem="HP6-N7-hxF" secondAttribute="bottom" constant="15" id="G8t-ut-o1v"/>
+                                            <constraint firstAttribute="trailing" secondItem="rbf-zz-OIo" secondAttribute="trailing" id="Ha8-8c-EZY"/>
+                                            <constraint firstAttribute="trailing" secondItem="poq-zb-idN" secondAttribute="trailing" id="IOS-zL-lHy"/>
+                                            <constraint firstItem="A36-Jr-Vfz" firstAttribute="top" secondItem="JQ7-By-0yn" secondAttribute="bottom" constant="30" id="K2A-zI-GEx"/>
+                                            <constraint firstItem="poq-zb-idN" firstAttribute="top" secondItem="A36-Jr-Vfz" secondAttribute="bottom" constant="10" id="K7E-Hk-Mmx"/>
+                                            <constraint firstItem="rbf-zz-OIo" firstAttribute="leading" secondItem="vdW-E6-o0x" secondAttribute="leading" id="KNt-hl-ULW"/>
+                                            <constraint firstItem="HP6-N7-hxF" firstAttribute="leading" secondItem="vdW-E6-o0x" secondAttribute="leading" id="Ysi-GW-B2A"/>
                                             <constraint firstAttribute="trailing" secondItem="ifn-FX-Yj6" secondAttribute="trailing" id="bZ6-uq-8AK"/>
+                                            <constraint firstItem="HP6-N7-hxF" firstAttribute="top" secondItem="ifn-FX-Yj6" secondAttribute="bottom" constant="35" id="dEU-83-R7t"/>
+                                            <constraint firstItem="JQ7-By-0yn" firstAttribute="centerX" secondItem="vdW-E6-o0x" secondAttribute="centerX" id="gRo-Ky-tHQ"/>
                                             <constraint firstItem="ifn-FX-Yj6" firstAttribute="top" secondItem="vdW-E6-o0x" secondAttribute="top" id="lSQ-oH-ezW"/>
+                                            <constraint firstItem="wVZ-yc-Yya" firstAttribute="leading" secondItem="vdW-E6-o0x" secondAttribute="leading" id="oII-bq-WYE"/>
+                                            <constraint firstItem="wVZ-yc-Yya" firstAttribute="top" secondItem="A36-Jr-Vfz" secondAttribute="bottom" constant="10" id="sAO-mR-Hhp"/>
+                                            <constraint firstItem="rbf-zz-OIo" firstAttribute="height" secondItem="HP6-N7-hxF" secondAttribute="height" id="sb1-Nc-Hh7"/>
+                                            <constraint firstItem="A36-Jr-Vfz" firstAttribute="height" secondItem="rbf-zz-OIo" secondAttribute="height" id="tVX-RZ-GZn"/>
+                                            <constraint firstItem="A36-Jr-Vfz" firstAttribute="leading" secondItem="vdW-E6-o0x" secondAttribute="leading" id="txC-7o-Bdb"/>
+                                            <constraint firstAttribute="trailing" secondItem="A36-Jr-Vfz" secondAttribute="trailing" id="vRv-og-aDR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -140,7 +195,8 @@
                                     <constraint firstItem="I0L-hg-oLn" firstAttribute="top" secondItem="R59-ee-V2t" secondAttribute="top" id="NDF-0Z-4CT"/>
                                     <constraint firstAttribute="trailing" secondItem="vdW-E6-o0x" secondAttribute="trailing" constant="20" id="NjK-qA-hes"/>
                                     <constraint firstItem="I0L-hg-oLn" firstAttribute="width" secondItem="R59-ee-V2t" secondAttribute="width" multiplier="1:2.2" id="R7V-mz-kdN"/>
-                                    <constraint firstItem="vdW-E6-o0x" firstAttribute="centerY" secondItem="R59-ee-V2t" secondAttribute="centerY" constant="80" id="cbw-SR-jBK"/>
+                                    <constraint firstItem="vdW-E6-o0x" firstAttribute="centerY" secondItem="R59-ee-V2t" secondAttribute="centerY" constant="40" id="cbw-SR-jBK"/>
+                                    <constraint firstItem="HP6-N7-hxF" firstAttribute="height" secondItem="R59-ee-V2t" secondAttribute="width" multiplier="1:8.5" id="rWt-Sa-fC1"/>
                                     <constraint firstItem="I0L-hg-oLn" firstAttribute="centerX" secondItem="R59-ee-V2t" secondAttribute="centerX" id="sfX-Wg-JnY"/>
                                 </constraints>
                             </view>
@@ -158,6 +214,16 @@
                             <constraint firstItem="R59-ee-V2t" firstAttribute="leading" secondItem="WRc-3l-oqc" secondAttribute="leading" id="twN-KV-p4O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCreate" destination="wVZ-yc-Yya" id="aem-bj-g1E"/>
+                        <outlet property="buttonForgotPass" destination="poq-zb-idN" id="gre-iA-qeo"/>
+                        <outlet property="labelLoginTitle" destination="ifn-FX-Yj6" id="x3y-if-P9n"/>
+                        <outlet property="labelOr" destination="JQ7-By-0yn" id="hbo-JG-GZk"/>
+                        <outlet property="textFieldEmail" destination="HP6-N7-hxF" id="oC3-qQ-2bj"/>
+                        <outlet property="textFieldPassword" destination="rbf-zz-OIo" id="B8f-lN-iPb"/>
+                        <outlet property="viewFacebook" destination="OaD-4p-A3M" id="x58-kM-x93"/>
+                        <outlet property="viewGoogle" destination="CLq-yn-dkg" id="VZi-yy-QNH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jws-Yd-f82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

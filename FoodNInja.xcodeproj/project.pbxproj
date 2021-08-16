@@ -31,6 +31,8 @@
 		E031D16826C8FDE80059A61D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16726C8FDE80059A61D /* AppConstants.swift */; };
 		E031D16B26C911D20059A61D /* FontConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16A26C911D20059A61D /* FontConstants.swift */; };
 		E031D17026C915F00059A61D /* UIlabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16F26C915F00059A61D /* UIlabel+Extension.swift */; };
+		E087404D26CAA85200F362F0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087404C26CAA85200F362F0 /* UIView+Extension.swift */; };
+		E087405026CAAA0700F362F0 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087404F26CAAA0700F362F0 /* UITextField+Extension.swift */; };
 		E0D52A0726C6D53700C9162A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D52A0626C6D53700C9162A /* AppDelegate.swift */; };
 		E0D52A0926C6D53700C9162A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D52A0826C6D53700C9162A /* SceneDelegate.swift */; };
 		E0D52A0B26C6D53700C9162A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D52A0A26C6D53700C9162A /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		E031D16726C8FDE80059A61D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		E031D16A26C911D20059A61D /* FontConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstants.swift; sourceTree = "<group>"; };
 		E031D16F26C915F00059A61D /* UIlabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIlabel+Extension.swift"; sourceTree = "<group>"; };
+		E087404C26CAA85200F362F0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E087404F26CAAA0700F362F0 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E0D52A0326C6D53700C9162A /* FoodNInja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNInja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D52A0626C6D53700C9162A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0D52A0826C6D53700C9162A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				E031D16F26C915F00059A61D /* UIlabel+Extension.swift */,
 				E02D354B26C917C00094FAA5 /* UIColor+Extension.swift */,
 				E02D354E26C91A4B0094FAA5 /* UIButton+Extension.swift */,
+				E087404C26CAA85200F362F0 /* UIView+Extension.swift */,
+				E087404F26CAAA0700F362F0 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			files = (
 				E02D355826C927630094FAA5 /* LoginViewController.swift in Sources */,
 				E02D355526C920CD0094FAA5 /* AppStrings.swift in Sources */,
+				E087404D26CAA85200F362F0 /* UIView+Extension.swift in Sources */,
 				E0D52A0B26C6D53700C9162A /* ViewController.swift in Sources */,
 				E02D355226C91DBF0094FAA5 /* AppImages.swift in Sources */,
 				E0D52A0726C6D53700C9162A /* AppDelegate.swift in Sources */,
@@ -356,6 +363,7 @@
 				E0D52A0926C6D53700C9162A /* SceneDelegate.swift in Sources */,
 				E02D354C26C917C00094FAA5 /* UIColor+Extension.swift in Sources */,
 				E02D355C26C92FA10094FAA5 /* AppTextField.swift in Sources */,
+				E087405026CAAA0700F362F0 /* UITextField+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
