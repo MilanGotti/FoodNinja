@@ -26,10 +26,9 @@ class TutorialViewController: UIViewController {
     
     func setupView(){
         self.imageTutorial.image = appImages.tutorials1
-        self.labelTitle.setupLabel(title: appString.tutorial1Title, font: AppFont.size23.bold, textColor: .appBlack)
-        self.labelDescription.setupLabel(title: appString.tutorial1Des, font: AppFont.size12.medium, textColor: .appBlack)
-        self.buttonNext.setupButton(title: "Next", font: AppFont.size16.bold, textColor: .defaultWhite)
-        
+        self.labelTitle.setupLabel(title: AppString.tutorial1Title, font: AppFont.size23.bold, textColor: .appBlack)
+        self.labelDescription.setupLabel(title: AppString.tutorial1Des, font: AppFont.size12.medium, textColor: .appBlack)
+        self.buttonNext.setupButton(title: AppString.next, font: AppFont.size15.bold, textColor: .defaultWhite)
         self.buttonNext.addTarget(self, action: #selector(buttonNextClick), for: .touchUpInside)
     }
     
@@ -42,8 +41,8 @@ class TutorialViewController: UIViewController {
             self.firstScreen = false
             UIView.transition(with: self.imageTutorial, duration: 0.75, options: .transitionCrossDissolve,  animations: {
                                 self.imageTutorial.image = appImages.tutorial2
-                                self.labelTitle.text = appString.tutorial2Title
-                                self.labelDescription.text = appString.tutorial2Des
+                                self.labelTitle.text = AppString.tutorial2Title
+                                self.labelDescription.text = AppString.tutorial2Des
                               }, completion: nil)
         } else {
             let controller = AuthenticationRoute.LoginViewController.instance as! LoginViewController

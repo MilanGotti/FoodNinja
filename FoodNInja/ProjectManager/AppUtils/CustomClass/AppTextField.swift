@@ -87,7 +87,9 @@ class AppTextField: UITextField {
     }
     
     @objc func buttonEyeClick(_ sender: UIButton){
-        
+        sender.isSelected.toggle()
+        sender.setImage(sender.isSelected ? UIImage(named: "eye_close") : UIImage(named: "eye_show"), for: .normal)
+        self.isSecureTextEntry = !sender.isSelected
     }
     
 }

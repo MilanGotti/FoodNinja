@@ -31,6 +31,8 @@
 		E031D16826C8FDE80059A61D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16726C8FDE80059A61D /* AppConstants.swift */; };
 		E031D16B26C911D20059A61D /* FontConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16A26C911D20059A61D /* FontConstants.swift */; };
 		E031D17026C915F00059A61D /* UIlabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031D16F26C915F00059A61D /* UIlabel+Extension.swift */; };
+		E035456526CD567F009D259F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035456426CD567F009D259F /* SignUpViewController.swift */; };
+		E035456826CD6B97009D259F /* SignUpProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035456726CD6B97009D259F /* SignUpProcessViewController.swift */; };
 		E087404D26CAA85200F362F0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087404C26CAA85200F362F0 /* UIView+Extension.swift */; };
 		E087405026CAAA0700F362F0 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087404F26CAAA0700F362F0 /* UITextField+Extension.swift */; };
 		E0D52A0726C6D53700C9162A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D52A0626C6D53700C9162A /* AppDelegate.swift */; };
@@ -66,6 +68,8 @@
 		E031D16726C8FDE80059A61D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		E031D16A26C911D20059A61D /* FontConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstants.swift; sourceTree = "<group>"; };
 		E031D16F26C915F00059A61D /* UIlabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIlabel+Extension.swift"; sourceTree = "<group>"; };
+		E035456426CD567F009D259F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E035456726CD6B97009D259F /* SignUpProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProcessViewController.swift; sourceTree = "<group>"; };
 		E087404C26CAA85200F362F0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E087404F26CAAA0700F362F0 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E0D52A0326C6D53700C9162A /* FoodNInja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodNInja.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +214,8 @@
 			children = (
 				E031D15826C8FAD70059A61D /* TutorialViewController.swift */,
 				E02D355726C927630094FAA5 /* LoginViewController.swift */,
+				E035456426CD567F009D259F /* SignUpViewController.swift */,
+				E035456726CD6B97009D259F /* SignUpProcessViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -353,12 +359,14 @@
 				E0D52A0B26C6D53700C9162A /* ViewController.swift in Sources */,
 				E02D355226C91DBF0094FAA5 /* AppImages.swift in Sources */,
 				E0D52A0726C6D53700C9162A /* AppDelegate.swift in Sources */,
+				E035456526CD567F009D259F /* SignUpViewController.swift in Sources */,
 				E031D16B26C911D20059A61D /* FontConstants.swift in Sources */,
 				E02D354F26C91A4B0094FAA5 /* UIButton+Extension.swift in Sources */,
 				E031D17026C915F00059A61D /* UIlabel+Extension.swift in Sources */,
 				E031D15E26C8FB320059A61D /* Routes.swift in Sources */,
 				E031D15926C8FAD70059A61D /* TutorialViewController.swift in Sources */,
 				E031D16826C8FDE80059A61D /* AppConstants.swift in Sources */,
+				E035456826CD6B97009D259F /* SignUpProcessViewController.swift in Sources */,
 				E031D16226C8FB6B0059A61D /* Identifiers.swift in Sources */,
 				E0D52A0926C6D53700C9162A /* SceneDelegate.swift in Sources */,
 				E02D354C26C917C00094FAA5 /* UIColor+Extension.swift in Sources */,
